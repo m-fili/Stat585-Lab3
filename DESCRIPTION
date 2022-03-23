@@ -1,11 +1,19 @@
 Package: MohammadLab3
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Creating Tidy Data Frames from Shape Files
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: person("Mohammad", "Fili", , "mfili@iastate,edu", role = c("aut", "cre"),
+                comment = c(ORCID = "0000-0001-6939-4157"))
+Maintainer: Mohammmad Fili <mfili@iastate.edu>
+Description: Given a file path or a shape file, it creates a tidy data frame including features such as latitude,
+    longitude, order, and group.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Imports: 
+    dplyr,
+    purrr,
+    rmapshaper,
+    sf
+Depends: R (>= 4.0.0)
+RoxygenNote: 7.1.2
